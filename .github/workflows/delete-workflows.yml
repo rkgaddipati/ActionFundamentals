@@ -21,7 +21,7 @@ jobs:
     - name: Show trigger event name  
       run: echo "Event that triggered this workflow:${{ github.event_name }}"  
     - name: Show current branch name  
-      run: echo "Branch:${{ github.event.workflow_run.head_branch }}"
+      run: echo "Branch:${{ github.ref }}"
     - name: Install tree  
       run: sudo apt-get install -y tree
     - name: List directory structure  
